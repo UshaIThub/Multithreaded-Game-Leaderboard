@@ -16,17 +16,14 @@ void GameManager::addPlayerToMatchmaking(int playerId) {
         if (player->getId() == playerId) {
 
             matchmaking.addPlayer(player);
-            Logger::info(player->getName() + " joined matchmaking");
 
-            std::cout << player->getName()
-                      << " joined matchmaking."
-                      << std::endl;
+            Logger::info(player->getName() + " joined matchmaking");
 
             return;
         }
     }
 
-    std::cout << "Player not found." << std::endl;
+    Logger::error("Player not found");
 }
 
 void GameManager::displayLeaderboard() {
