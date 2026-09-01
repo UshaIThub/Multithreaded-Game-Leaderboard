@@ -1,0 +1,15 @@
+# CMake build directory
+build/
+
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/
+
+# Compiled executable
+game
+
+# Temporary files
+*.o
+*.out
